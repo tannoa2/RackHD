@@ -85,9 +85,25 @@ class OSInstallTests(object):
                 'options': {
                     'defaults': {
                         'installDisk': '/dev/sda',
+                        "installPartitions": [
+                            {
+                                "mountPoint": "/boot",
+                                "size": "500",
+                                "fsType": "ext3"
+                            },
+                            {
+                                "mountPoint": "swap",
+                                "size": "500",
+                                "fsType": "swap"
+                            },
+                            {
+                                "mountPoint": "/",
+                                "size": "auto",
+                                "fsType": "ext3"
+                            },
                         'version': version,
                         'repo': os_repo,
-			'users': [{ 'name': 'onrack', 'password': 'Onr@ck1!', 'uid': 1010 }]
+			            'users': [{ 'name': 'onrack', 'password': 'Onr@ck1!', 'uid': 1010 }]
                     },
                     'set-boot-pxe': self.__obm_options,
                     'reboot': self.__obm_options,
