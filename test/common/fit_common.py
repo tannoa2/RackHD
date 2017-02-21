@@ -204,6 +204,9 @@ def apply_stack_config():
             fitargs()['bmc'] = fitcfg()['bmc']
         if 'hyper' in fitcfg():
             fitargs()['hyper'] = fitcfg()['hyper']
+        if 'ucs_ip' in fitcfg():
+            fitargs()['ucs_ip'] = fitcfg()['ucs_ip']
+        #print mkargs()
 
 
 def add_globals():

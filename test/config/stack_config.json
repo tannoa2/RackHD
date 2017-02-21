@@ -11,7 +11,8 @@
   },
   "vagrant":{
     "rackhd_host": "localhost",
-    "type": "vagrant"
+    "type": "vagrant",
+    "ucs_ip" : "10.240.19.236"
   },
   "vagrant_remote": {
     "rackhd_host": "127.0.0.1",
