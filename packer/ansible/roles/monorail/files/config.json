@@ -63,5 +63,9 @@
     "tftpBindAddress": "172.31.128.1",
     "tftpBindPort": 69,
     "tftpRoot": "./static/tftp",
+    "default_ibms" : {
+        "user": "monorail",
+        "password": "monorail"
+    },
     "minLogLevel": 2
 }
